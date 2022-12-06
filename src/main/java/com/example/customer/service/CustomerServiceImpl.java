@@ -18,6 +18,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     @Override
     public List<Customer> searchShareByCustomerId(Integer customerId) {
-        return customerDao.searchShareIdByCustomerId(customerId);
+        return customerDao.searchByCustomerId(customerId);
     }
 }
