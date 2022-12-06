@@ -15,7 +15,7 @@ public class CustomerResource {
     private CustomerService customerService;
 
     @GetMapping(path = "/shares/{cid}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public CustomerList searchShareByCustomerIdResource(int userId) {
+    public CustomerList searchShareByCustomerIdResource(Integer userId) {
         return new CustomerList(customerService.searchShareByCustomerId(userId));
     }
 
